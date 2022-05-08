@@ -7,18 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42CE3A1A2127C2407C244722 /* Pods_ChitChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB6200F0D664AC39A33A391 /* Pods_ChitChat.framework */; };
+		E928B0FD282880CD00AD5C6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E928B0FC282880CD00AD5C6E /* GoogleService-Info.plist */; };
 		E929C2AC27F9872200047953 /* ChitChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E929C2AB27F9872200047953 /* ChitChatApp.swift */; };
-		E929C2AE27F9872200047953 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E929C2AD27F9872200047953 /* ContentView.swift */; };
+		E929C2AE27F9872200047953 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E929C2AD27F9872200047953 /* ConversationView.swift */; };
 		E929C2B027F9872200047953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E929C2AF27F9872200047953 /* Assets.xcassets */; };
 		E929C2B327F9872200047953 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E929C2B227F9872200047953 /* Preview Assets.xcassets */; };
+		E960E4BF280D4BC900DEAFE7 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E960E4BE280D4BC900DEAFE7 /* SignInView.swift */; };
+		E960E4C1280D4BD600DEAFE7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E960E4C0280D4BD600DEAFE7 /* SignUpView.swift */; };
+		E960E4C3280D4BED00DEAFE7 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E960E4C2280D4BED00DEAFE7 /* ChatView.swift */; };
+		E960E4C5280D4BF700DEAFE7 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E960E4C4280D4BF700DEAFE7 /* ChatRow.swift */; };
+		E960E4C8280D4C1B00DEAFE7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E960E4C7280D4C1B00DEAFE7 /* SearchView.swift */; };
+		E960E4CA280D4C2300DEAFE7 /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E960E4C9280D4C2300DEAFE7 /* SendButton.swift */; };
+		E960E4CC280D4C5500DEAFE7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E960E4CB280D4C5500DEAFE7 /* Message.swift */; };
+		E960E4CE280D4C6E00DEAFE7 /* AppStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E960E4CD280D4C6E00DEAFE7 /* AppStateModel.swift */; };
+		E9BEC0D4280FE2FF00F30F11 /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BEC0D3280FE2FF00F30F11 /* CustomField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1771BEE312D6CDC9D0BA63FB /* Pods-ChitChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChitChat.release.xcconfig"; path = "Target Support Files/Pods-ChitChat/Pods-ChitChat.release.xcconfig"; sourceTree = "<group>"; };
+		6EB6200F0D664AC39A33A391 /* Pods_ChitChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChitChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73A3DC258871CA519382901 /* Pods-ChitChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChitChat.debug.xcconfig"; path = "Target Support Files/Pods-ChitChat/Pods-ChitChat.debug.xcconfig"; sourceTree = "<group>"; };
+		E928B0FC282880CD00AD5C6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E929C2A827F9872200047953 /* ChitChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChitChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E929C2AB27F9872200047953 /* ChitChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChitChatApp.swift; sourceTree = "<group>"; };
-		E929C2AD27F9872200047953 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E929C2AD27F9872200047953 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
 		E929C2AF27F9872200047953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E929C2B227F9872200047953 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E960E4BE280D4BC900DEAFE7 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E960E4C0280D4BD600DEAFE7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		E960E4C2280D4BED00DEAFE7 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		E960E4C4280D4BF700DEAFE7 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		E960E4C7280D4C1B00DEAFE7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		E960E4C9280D4C2300DEAFE7 /* SendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
+		E960E4CB280D4C5500DEAFE7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E960E4CD280D4C6E00DEAFE7 /* AppStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateModel.swift; sourceTree = "<group>"; };
+		E9BEC0D3280FE2FF00F30F11 /* CustomField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +50,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CE3A1A2127C2407C244722 /* Pods_ChitChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94AB3A84CE2C9D9515A97B58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EB6200F0D664AC39A33A391 /* Pods_ChitChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA8F9FEB3EACDFBC8088A2E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E73A3DC258871CA519382901 /* Pods-ChitChat.debug.xcconfig */,
+				1771BEE312D6CDC9D0BA63FB /* Pods-ChitChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E929C29F27F9872200047953 = {
 			isa = PBXGroup;
 			children = (
 				E929C2AA27F9872200047953 /* ChitChat */,
 				E929C2A927F9872200047953 /* Products */,
+				CA8F9FEB3EACDFBC8088A2E4 /* Pods */,
+				94AB3A84CE2C9D9515A97B58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +96,10 @@
 		E929C2AA27F9872200047953 /* ChitChat */ = {
 			isa = PBXGroup;
 			children = (
-				E929C2AB27F9872200047953 /* ChitChatApp.swift */,
-				E929C2AD27F9872200047953 /* ContentView.swift */,
-				E929C2AF27F9872200047953 /* Assets.xcassets */,
+				E960E4BA280D493900DEAFE7 /* App */,
+				E960E4BD280D49CF00DEAFE7 /* Model */,
+				E960E4BC280D49C300DEAFE7 /* Views */,
+				E960E4BB280D49B500DEAFE7 /* Resources */,
 				E929C2B127F9872200047953 /* Preview Content */,
 			);
 			path = ChitChat;
@@ -67,6 +113,63 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E960E4BA280D493900DEAFE7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E929C2AB27F9872200047953 /* ChitChatApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E960E4BB280D49B500DEAFE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E928B0FC282880CD00AD5C6E /* GoogleService-Info.plist */,
+				E929C2AF27F9872200047953 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E960E4BC280D49C300DEAFE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9BEC0D2280FE2EB00F30F11 /* Custom */,
+				E960E4C6280D4BFF00DEAFE7 /* Components */,
+				E929C2AD27F9872200047953 /* ConversationView.swift */,
+				E960E4BE280D4BC900DEAFE7 /* SignInView.swift */,
+				E960E4C0280D4BD600DEAFE7 /* SignUpView.swift */,
+				E960E4C2280D4BED00DEAFE7 /* ChatView.swift */,
+				E960E4C7280D4C1B00DEAFE7 /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E960E4BD280D49CF00DEAFE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E960E4CB280D4C5500DEAFE7 /* Message.swift */,
+				E960E4CD280D4C6E00DEAFE7 /* AppStateModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E960E4C6280D4BFF00DEAFE7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E960E4C4280D4BF700DEAFE7 /* ChatRow.swift */,
+				E960E4C9280D4C2300DEAFE7 /* SendButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E9BEC0D2280FE2EB00F30F11 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E9BEC0D3280FE2FF00F30F11 /* CustomField.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E929C2B627F9872200047953 /* Build configuration list for PBXNativeTarget "ChitChat" */;
 			buildPhases = (
+				DACA9EE5FE77A664B2FE8D44 /* [CP] Check Pods Manifest.lock */,
 				E929C2A427F9872200047953 /* Sources */,
 				E929C2A527F9872200047953 /* Frameworks */,
 				E929C2A627F9872200047953 /* Resources */,
+				1862FBBA3F23DE7019AB957F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,18 +232,70 @@
 			files = (
 				E929C2B327F9872200047953 /* Preview Assets.xcassets in Resources */,
 				E929C2B027F9872200047953 /* Assets.xcassets in Resources */,
+				E928B0FD282880CD00AD5C6E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1862FBBA3F23DE7019AB957F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChitChat/Pods-ChitChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChitChat/Pods-ChitChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChitChat/Pods-ChitChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DACA9EE5FE77A664B2FE8D44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChitChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E929C2A427F9872200047953 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E929C2AE27F9872200047953 /* ContentView.swift in Sources */,
+				E9BEC0D4280FE2FF00F30F11 /* CustomField.swift in Sources */,
+				E960E4C1280D4BD600DEAFE7 /* SignUpView.swift in Sources */,
+				E960E4CA280D4C2300DEAFE7 /* SendButton.swift in Sources */,
+				E960E4BF280D4BC900DEAFE7 /* SignInView.swift in Sources */,
+				E960E4CC280D4C5500DEAFE7 /* Message.swift in Sources */,
+				E960E4C3280D4BED00DEAFE7 /* ChatView.swift in Sources */,
+				E960E4C8280D4C1B00DEAFE7 /* SearchView.swift in Sources */,
+				E929C2AE27F9872200047953 /* ConversationView.swift in Sources */,
+				E960E4C5280D4BF700DEAFE7 /* ChatRow.swift in Sources */,
 				E929C2AC27F9872200047953 /* ChitChatApp.swift in Sources */,
+				E960E4CE280D4C6E00DEAFE7 /* AppStateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +420,7 @@
 		};
 		E929C2B727F9872200047953 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73A3DC258871CA519382901 /* Pods-ChitChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +450,7 @@
 		};
 		E929C2B827F9872200047953 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1771BEE312D6CDC9D0BA63FB /* Pods-ChitChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
