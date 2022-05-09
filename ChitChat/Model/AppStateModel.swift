@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+import FirebaseAuth
+import FirebaseFirestore
 
 class AppStateModel: ObservableObject {
     @Published var showingSignIn: Bool = true
@@ -16,7 +18,9 @@ class AppStateModel: ObservableObject {
     @Published var conversations: [String] = []
     @Published var messages: [Message] = []
     var otherUsername = ""
-
+    
+    let database = Firestore.firestore()
+    let auth = Auth.auth()
 }
 
 
@@ -53,7 +57,29 @@ extension AppStateModel {
     
     
     func signUp(email: String,username: String,password: String) {
-        
+        auth.createUser(withEmail: email, password: password) { [weak self] result, error in
+            guard result != nil, error == nil else {
+               return
+            }
+            
+            let data = [
+                "email": email,
+                "username": username
+            ]
+            
+            self?.database.collection("users").document(username).setData(data) { error in
+                guard error == nil else {
+                    return
+                }
+                
+                DispatchQueue.main.async {
+                    self?.currentUsername = username
+                    self?.currentEmail = email
+                    self?.showingSignIn = false
+                }
+               
+            }
+        }
     }
     
     func signOut() {
