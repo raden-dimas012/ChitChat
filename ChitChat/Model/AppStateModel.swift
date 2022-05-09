@@ -70,9 +70,16 @@ extension AppStateModel {
                 return
             }
                 
-                let messages = objects.compactMap({
-                    return Message(text: $0["text"] as? String ?? "", type: $0["sender"] as? String == self?.currentUsername ? .sent : .receive, created: DateFormatter().date(from: $0["created"] as? String ?? "") ?? Date())
+                let messages: [Message] = objects.compactMap({
+                    guard let date = ISO8601DateFormatter().date(from: $0["created"] as? String ?? "") else {
+                        return nil
+                    }
+                    return Message(text: $0["text"] as? String ?? "", type: $0["sender"] as? String == self?.currentUsername ? .sent : .receive,
+                                   created: date)
+                }).sorted(by: {first,second in
+                    return first.created < second.created
                 })
+                
             
             DispatchQueue.main.async {
                 self?.messages = messages
@@ -81,6 +88,32 @@ extension AppStateModel {
     }
     
     func sendMessage(text: String) {
+        
+        let newMessageID = UUID().uuidString
+        let dateString = ISO8601DateFormatter().string(from: Date())
+        
+        guard !dateString.isEmpty else {
+            return
+        }
+         
+        let data = [
+            "text": text,
+            "sender": currentUsername,
+            "created": dateString
+        ]
+        database.collection("users")
+            .document(currentUsername)
+            .collection("chats")
+            .document(otherUsername)
+            .collection("messages")
+            .document(newMessageID).setData(data)
+        
+        database.collection("users")
+            .document(otherUsername)
+            .collection("chats")
+            .document(currentUsername)
+            .collection("messages")
+            .document(newMessageID).setData(data)
         
     }
     

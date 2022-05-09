@@ -21,9 +21,12 @@ struct ConversationView: View {
                         ChatView(otheruserName: name)
                     } label: {
                         HStack {
-                            Circle()
+                            Image(model.currentUsername == "Raden" ? "Photo" : "Shane")
+                                .resizable()
+                                .scaledToFit()
                                 .frame(width: 65, height: 65)
                                 .foregroundColor(Color.pink)
+                                .clipShape(Circle())
                             
                             Text(name)
                                 .bold()
