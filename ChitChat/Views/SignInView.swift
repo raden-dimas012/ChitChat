@@ -49,7 +49,6 @@ struct SignInView: View {
                 .padding()
                 Spacer()
                 
-                
                 HStack {
                     Text("New to Messengger")
                     NavigationLink("Create an Account",destination: SignUpView())

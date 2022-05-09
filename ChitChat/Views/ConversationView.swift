@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct ConversationView: View {
-    
-    let usernames: [String] = ["Raden","Dimas","Akbar"]
     @EnvironmentObject var model: AppStateModel
     @State var otherUsername: String = ""
     @State var showChat: Bool = false
+    @State var showSearch: Bool = false
     
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-                ForEach(usernames, id: \.self) { name in
+                ForEach(model.conversations, id: \.self) { name in
                     NavigationLink {
                         ChatView(otheruserName: name)
                     } label: {
@@ -52,16 +51,18 @@ struct ConversationView: View {
                 }
 
                 ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
-                    NavigationLink {
-                        SearchView { name in
+                    NavigationLink (
+                        destination: SearchView { name in
+                            self.showSearch = false
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                 self.otherUsername = name
                                 self.showChat = true
                             }
-                        }
-                    } label: {
+                        },
+                    isActive: $showSearch,
+                    label: {
                         Image(systemName: "magnifyingglass")
-                    }
+                    })
 
 
                 }
@@ -69,12 +70,19 @@ struct ConversationView: View {
             .fullScreenCover(isPresented: $model.showingSignIn, onDismiss: nil) {
                 SignInView()
             }
+            .onAppear{
+                guard model.auth.currentUser != nil else {
+                    return
+                }
+                
+                model.getConverstions()
+            }
            
         }
     }
     
     private func signOut() {
-        
+        model.signOut()
     }
 }
 
