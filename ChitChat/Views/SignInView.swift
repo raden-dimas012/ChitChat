@@ -15,7 +15,7 @@ struct SignInView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
+    
                 Image("Logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -27,12 +27,13 @@ struct SignInView: View {
                 VStack {
                     TextField("Username", text: $username)
                         .modifier(CustomField())
-                        .textInputAutocapitalization(.none)
+                        .textInputAutocapitalization(.never)
+//                        .textInputAutocapitalization(.none)
                         .disableAutocorrection(true)
                     
                     SecureField("Password", text: $password)
                         .modifier(CustomField())
-                        .textInputAutocapitalization(.none)
+                        .textInputAutocapitalization(.never)
                         .disableAutocorrection(true)
                     
                     Button {

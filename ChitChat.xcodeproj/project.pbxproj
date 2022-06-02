@@ -71,7 +71,6 @@
 				E73A3DC258871CA519382901 /* Pods-ChitChat.debug.xcconfig */,
 				1771BEE312D6CDC9D0BA63FB /* Pods-ChitChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

@@ -66,12 +66,11 @@ struct ConversationView: View {
                     label: {
                         Image(systemName: "magnifyingglass")
                     })
-
-
                 }
             }
             .fullScreenCover(isPresented: $model.showingSignIn, onDismiss: nil) {
                 SignInView()
+                   
             }
             .onAppear{
                 guard model.auth.currentUser != nil else {
